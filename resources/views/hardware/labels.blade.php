@@ -133,11 +133,9 @@ $qr_size = ($settings->alt_barcode_enabled=='1') && ($settings->alt_barcode!='')
                     C: {{ $asset->company->name }}
                 </div>
             @endif
-            @if (($settings->labels_display_name=='1') && ($asset->name!=''))
                 <div class="pull-left">
                     N: {{ $asset->name }}
                 </div>
-            @endif
             @if (($settings->labels_display_tag=='1') && ($asset->asset_tag!=''))
                 <div class="pull-left">
                     T: {{ $asset->asset_tag }}
